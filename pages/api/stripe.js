@@ -19,12 +19,12 @@ export default async function handler(req, res) {
 
           return {
             price_data: { 
-              currency: 'gbp',
+              currency: 'usd',
               product_data: { 
                 name: item.name,
                 images: [newImage],
               },
-              unit_amount: item.price * 100,
+              unit_amount: item.price * 10,
             },
             adjustable_quantity: {
               enabled:true,
